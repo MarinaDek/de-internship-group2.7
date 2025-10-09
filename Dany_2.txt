@@ -4,3 +4,8 @@
 SELECT *
 FROM book
 WHERE price BEETWEEN 540.50 AND 800 (закончите запрос)
+
+SELECT *
+FROM book
+WHERE price BETWEEN 540.50 AND 800 
+ AND count in (2, 3, 7)
