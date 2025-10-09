@@ -11,6 +11,7 @@ class User(Base):
     id = Column(Integer, primary_key=True)  # Первичный ключ
     name = Column(String)                   # Имя пользователя
     age = Column(Integer)                   # Возраст
+    gender = Column(String)                 # Пол пользователя
 
 # Подключение к базе данных SQLite в памяти
 engine = create_engine('sqlite:///:memory:', echo=True)
@@ -23,7 +24,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # Создаём объект пользователя
-new_user = User(name="Alice", age=30)
+new_user = User(name="Alice", age=30, gender="women")
 
 # Добавляем объект в сессию
 session.add(new_user)
