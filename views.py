@@ -4,6 +4,7 @@ from .forms import TelegramMessageForm
 from telegram import Bot
 
 # Create your views here.
+# :)
 async def send_telegram_message(request):
     bot = Bot(token=settings.TELEGRAM_BOT_TOKEN)
 
