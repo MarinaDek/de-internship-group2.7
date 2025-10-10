@@ -38,8 +38,11 @@ user = session.query(User).filter_by(name="Alice").first()
 
 # Обновляем возраст пользователя
 if user:
-    user.age = 31
+    user.age = 45
+    user.name = 'Alise'
     session.commit()  # Фиксируем измененияame: {user.name}, Age: {user.age}")
 
 # Закрытие сессии
 # session.close()
+
+# Даня - отредактировал возраст и имя

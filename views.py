@@ -27,3 +27,6 @@ async def send_telegram_message(request):
         form = TelegramMessageForm()
 
     return render(request, 'telegram_app/send_message.html', {'form': form})
+
+
+# Даня - С Django никогда не работал, даже не могу сказать что тут происходит:)
